@@ -1,0 +1,61 @@
+<!-- 
+    Author:Shree Dhar Acharya
+    Date:2023/03/27
+    Student ID:8899288
+    Application:Web Productivity App
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+  </head>
+  <body class="body-wrapper">
+    <header>
+        <nav class="navbar">
+            <ul>
+              <li><img src="./images/Shree.jpeg" alt="Avatar" class="avatar" /></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="bucketlist.html">Bucketlist</a></li>
+              <li><a href="calendar.html">Calendar</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+    </header>
+    
+      <div id="calendar" class="calendar">
+        <div class="header">
+            <button id="previousMonth">Previous</button>
+            <div id="month"></div>
+            <div id="year"></div>
+            <button id="nextMonth">Next</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+          </table>
+      </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="calendar.js"></script>
+    <footer>
+      <p>&copy; 2023 Shree Dhar Acharya. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
